@@ -1,0 +1,15 @@
+../Core/Src/disp1color.c:33:6:disp1color_FillScreenbuff	16	static
+../Core/Src/disp1color.c:43:6:disp1color_UpdateFromBuff	8	static
+../Core/Src/disp1color.c:56:6:disp1color_printf	124	static
+../Core/Src/disp1color.c:74:6:disp1color_DrawPixel	24	static
+../Core/Src/disp1color.c:108:6:disp1color_DrawLine	40	static
+../Core/Src/disp1color.c:142:6:disp1color_DrawRectangle	24	static
+../Core/Src/disp1color.c:155:6:disp1color_DrawCircle	32	static
+../Core/Src/disp1color.c:197:9:disp1color_DrawChar	40	static
+../Core/Src/disp1color.c:239:6:disp1color_DrawString	32	static
+../Core/Src/disp1color.c:281:6:print_buf	24	static
+../Core/Src/disp1color.c:293:6:DMD_1COLOR_DisplayFullUpdate	16	static
+../Core/Src/disp1color.c:306:6:DMD_1COLOR_UpdateRow4	40	static
+../Core/Src/disp1color.c:343:6:DMD_1COLOR_SendFromMatrixBuff	40	static
+../Core/Src/disp1color.c:369:9:DMD_1COLOR_GetFrom8ScreenBytes	24	static
+../Core/Src/disp1color.c:395:6:prepare_data	16	static
