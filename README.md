@@ -7,7 +7,7 @@ To run open .cproject file with STM32CubeIDE. Board used: Discovery Kit with STM
 
 ![image](https://github.com/Coconutt69/Tetris_stm32/assets/137206541/9b28e373-9789-4950-94fe-bff5be41cc47)
 
-The full electrical scheme of the LED:
+The full electrical scheme of the matrix:
 
 ![Pasted image 20231201044359](https://github.com/Coconutt69/Tetris_stm32/assets/137206541/139554af-ff49-40c4-9218-2e59afcabf14)
 
