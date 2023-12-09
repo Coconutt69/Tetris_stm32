@@ -19,7 +19,7 @@ Connection to the STM:
 
 # Esplora 
 
-The buttons on the Arduino Esplora is used for controlling in the game. This can be replaced by just normal button to GPIO. If you want to use the same then load the tetris_joystick.ino file to the Esplora before connecting. 
+The buttons on the Arduino Esplora is used for controlling in the game. This can be replaced by just normal buttons to GPIO. If you want to use the same then load the tetris_joystick.ino file to the Esplora before connecting. 
 
 ![image](https://github.com/Coconutt69/Tetris_stm32/assets/137206541/0dcf7cd9-bc07-4e35-82d0-e99fc7db7520)
 
