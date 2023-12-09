@@ -212,8 +212,6 @@ void delete_old_piece(int16_t X, int16_t Y){
 
 void disp_row(int row){
 
-
-
 	  if (row == 0){
 
 		  		HAL_SPI_Transmit(&hspi1, data1, 16, 10);
@@ -392,8 +390,10 @@ int main(void)
 						for(i = 0; i < 4; i++){
 							for(j= 0; j < 4; j++){
 								if (gridY + j >= 16) floor_collided += piece_matrix[i][j]*1;
-								else if (inside_play_field()) floor_collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
-								if((piece_matrix[i][j]&&grid[gridX+i][gridY+j]) && (gridY+j == 0)) game_over = 1;
+								else if (inside_play_field())
+									floor_collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
+								if((piece_matrix[i][j] && grid[gridX+i][gridY+j]) && (gridY+j == 0))
+									game_over = 1;
 							}
 						}
 						if (floor_collided) {
@@ -403,7 +403,7 @@ int main(void)
 							  for(i = 0; i<4; i++){
 								  for(j = 0; j<4; j++){
 									  if(inside_play_field())
-									  grid[gridX+i][gridY+j] = grid[gridX+i][gridY+j]||piece_matrix[i][j];
+										  grid[gridX+i][gridY+j] = grid[gridX+i][gridY+j]||piece_matrix[i][j];
 								  }
 							  }
 						}
@@ -418,8 +418,10 @@ int main(void)
 				  for(i = 0; i < 4; i++){
 					  for(j= 0; j < 4; j++){
 							if (gridY + j >= 16) floor_collided += piece_matrix[i][j]*1;
-							else if (inside_play_field()) floor_collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
-							if((piece_matrix[i][j]&&grid[gridX+i][gridY+j]) && (gridY+j == 0)) game_over = 1;
+							else if (inside_play_field())
+								floor_collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
+							if((piece_matrix[i][j] && grid[gridX+i][gridY+j]) && (gridY+j == 0))
+								game_over = 1;
 					  }
 				  }
 			  	}
@@ -440,8 +442,10 @@ int main(void)
 				uint8_t left_wall_collided = 0;
 				for(i = 0; i < 4; i++){
 					for(j= 0; j < 4; j++){
-						if (gridX + i < 0) left_wall_collided += piece_matrix[i][j]*1;
-						else if (inside_play_field()) left_wall_collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
+						if (gridX + i < 0)
+							left_wall_collided += piece_matrix[i][j]*1;
+						else if (inside_play_field())
+							left_wall_collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
 					}
 				}
 				if (left_wall_collided) {
@@ -455,8 +459,10 @@ int main(void)
 				uint8_t right_wall_collided = 0;
 				for(i = 0; i < 4; i++){
 					for(j= 0; j < 4; j++){
-						if (gridX + i >= 8) right_wall_collided += piece_matrix[i][j]*1;
-						else if (inside_play_field()) right_wall_collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
+						if (gridX + i >= 8)
+							right_wall_collided += piece_matrix[i][j]*1;
+						else if (inside_play_field())
+							right_wall_collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
 					}
 				}
 				if (right_wall_collided) {
@@ -480,7 +486,8 @@ int main(void)
 					for(j= 0; j < 4; j++){
 						if ((gridX + i >= 8) || (gridX + i < 0) || (gridY + j < 0) || (gridY + j >= 16))
 							collided += piece_matrix[i][j]*1;
-						else if (inside_play_field()) collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
+						else if (inside_play_field())
+							collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
 					}
 				}
 				if (collided) {
@@ -497,7 +504,8 @@ int main(void)
 							for(j= 0; j < 4; j++){
 								if ((gridX + i >= 8) || (gridX + i < 0) || (gridY + j >= 16))
 									collided += piece_matrix[i][j]*1;
-								else if (inside_play_field()) collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
+								else if (inside_play_field())
+									collided += piece_matrix[i][j]*grid[gridX+i][gridY+j];
 							}
 						}
 						if (collided){
