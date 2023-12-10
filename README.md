@@ -1,6 +1,6 @@
 # Description
 
-Tetris in STM32 with P10 LED matrix, controls using Arduino Esplora.
+Tetris in STM32 with P10 LED matrix, controls using Arduino Esplora. Library for writing to the LED matrix by nadyrshin_ryu (Electronics in Focus) is used <https://bitbucket.org/nadyrshin_ryu/dmd_1color_stm32/src/master/>
 
 To run open .cproject file with STM32CubeIDE.
 
